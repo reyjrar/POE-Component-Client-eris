@@ -1,0 +1,12 @@
+name:         POE-Component-Client-eris
+version:      0.6
+version_from: lib/POE/Component/Client/eris.pm
+installdirs:  site
+requires:
+    Parse::Syslog::Line:           0
+    POE:                           0
+    POE::Component::Client::TCP:   0
+    Test::More:                    0
+
+distribution_type: module
+generated_by: ExtUtils::MakeMaker version 6.17
