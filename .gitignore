@@ -2,3 +2,9 @@
 .svn
 inc
 blib
+POE-Component-Client-eris-*
+MANIFEST
+Makefile
+Makefile.old
+.cvsignore
+pm_to_blib
