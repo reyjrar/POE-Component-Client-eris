@@ -1,5 +1,11 @@
 Revision history for POE-Component-Client-eris
 
-0.01    2007-03-02 lhotskyb@mail.nih.gov
+0.6 	2011-07-08 Brad Lhotsky <brad@divisionbyzero.net>
+		- Added to https://github.com/reyjrar/POE-Component-Client-eris
+		- Added to PAUSE
+		- scripts/eris-syslog-ng.pl included in distribution
+		- supports match and subscription
+
+0.01    2007-03-02 Brad Lhotsky <brad@divisionbyzero.net>
         First version, only basic functionality
 
