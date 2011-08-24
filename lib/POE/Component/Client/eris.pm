@@ -98,7 +98,7 @@ sub spawn {
 		ServerError		=> sub  {
 			my ($kernel,$syscall,$errid,$errstr) = @_[KERNEL,ARG0,ARG1,ARG2];
 			carp "Server Error ($errid) at $syscall: $errstr\n";
-			$kernel->delay('reconnect' => 1);
+			$kernel->delay('reconnect' => 5);
 		},
 		#
 		# Handle messages from the server.
