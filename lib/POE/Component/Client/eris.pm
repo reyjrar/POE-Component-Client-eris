@@ -1,3 +1,5 @@
+# ABSTRACT: POE Component for reading eris events
+
 package POE::Component::Client::eris;
 
 use warnings;
@@ -15,11 +17,11 @@ POE::Component::Client::eris - POE eris Session!
 
 =head1 VERSION
 
-Version 0.01
+Version 0.7
 
 =cut
 
-our $VERSION = '0.6';
+our $VERSION = '0.7';
 
 =head1 SYNOPSIS
 
