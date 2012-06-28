@@ -1,4 +1,7 @@
 Revision history for POE-Component-Client-eris
+0.7     2012-06-28 Brad Lhotsky <brad@divisionbyzero.net>
+        - Moved to Dist::Zilla
+        - Fixed whitespace at end of lines
 
 0.6 	2011-07-08 Brad Lhotsky <brad@divisionbyzero.net>
 		- Added to https://github.com/reyjrar/POE-Component-Client-eris

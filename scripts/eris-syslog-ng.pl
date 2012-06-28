@@ -121,7 +121,7 @@ sub debug_client {
 	if( exists $heap->{full}{$sid} ) {  return;  }
 
 	$heap->{debug}{$sid} = 1;
-	$kernel->post( $sid => 'client_print' => 'Debugging enabled.' ); 
+	$kernel->post( $sid => 'client_print' => 'Debugging enabled.' );
 }
 
 #--------------------------------------------------------------------------#
@@ -130,7 +130,7 @@ sub nobug_client {
 
 	delete $heap->{debug}{$sid}
 		if exists $heap->{debug}{$sid};
-	$kernel->post( $sid => 'client_print' => 'Debugging disabled.' ); 
+	$kernel->post( $sid => 'client_print' => 'Debugging disabled.' );
 }
 
 #--------------------------------------------------------------------------#
@@ -285,7 +285,7 @@ sub stream_error {
 sub server_shutdown {
 	my ($kernel,$heap,$msg) = @_[KERNEL,HEAP,ARG0];
 
-	$kernel->call( dispatcher => 'broadcast' => 'SERVER DISCONNECTING: ' . $msg );	
+	$kernel->call( dispatcher => 'broadcast' => 'SERVER DISCONNECTING: ' . $msg );
 	$kernel->call( 'server' => 'shutdown' );
 	exit;
 }
@@ -335,7 +335,7 @@ sub dispatch_message {
 		# remove the sub process and PID from the program
 		$program =~ s/\(.*//g;
 		$program =~ s/\[.*//g;
-	
+
 		debug("DISPATCHING MESSAGE [$program]");
 
 		if( exists $heap->{subscribers}{$program} ) {
@@ -364,7 +364,7 @@ sub dispatch_message {
 sub debug_message {
 	my ($kernel,$heap,$msg) = @_[KERNEL,HEAP,ARG0];
 
-	
+
 	foreach my $sid (keys %{ $heap->{debug} }) {
 		$kernel->post( $sid => 'client_print' => '[debug] ' . $msg );
 	}
@@ -438,7 +438,7 @@ sub client_input {
 			#},
 		};
 	}
-	
+
 	#
 	# Check for messages:
 	my $handled = 0;

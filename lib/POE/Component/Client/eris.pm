@@ -87,7 +87,7 @@ sub spawn {
 			$heap->{readyState} = 0;
 			$heap->{connected} = 0;
 			$kernel->delay( 'do_setup_pipe' => 1 );
-		},	
+		},
 		ConnectError	=> sub {
 			my ($kernel,$syscall,$errid,$errstr) = @_[KERNEL,ARG0,ARG1,ARG2];
 			carp "Connection Error ($errid) at $syscall: $errstr\n";
