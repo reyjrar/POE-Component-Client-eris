@@ -11,7 +11,6 @@ use warnings;
 use Socket;
 
 # POE System
-use EV;
 use POE qw(
 	Wheel::ReadWrite
 	Component::Server::TCP
