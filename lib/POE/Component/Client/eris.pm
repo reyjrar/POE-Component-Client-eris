@@ -150,7 +150,7 @@ sub spawn {
 
 				# Send the Subscription
 				$kernel->yield( do_subscribe => \@subs ) if @subs;
-				$kernel->yield( do_matches => \@subs ) if @matches;
+				$kernel->yield( do_match => \@subs ) if @matches;
 			},
 			do_subscribe	=> sub {
 				my ($kernel,$heap,$subs) = @_[KERNEL,HEAP,ARG0];
