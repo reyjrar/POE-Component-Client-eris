@@ -4,7 +4,7 @@ POE::Component::Client::eris - POE Component for reading eris events
 
 # VERSION
 
-version 0.7
+version 0.8
 
 # SYNOPSIS
 
@@ -29,7 +29,7 @@ POE::Component::Client::eris - POE eris Session!
 
 # VERSION
 
-Version 0.7
+Version 0.8
 
 # EXPORT
 

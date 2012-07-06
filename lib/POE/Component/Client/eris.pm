@@ -17,11 +17,11 @@ POE::Component::Client::eris - POE eris Session!
 
 =head1 VERSION
 
-Version 0.7
+Version 0.8
 
 =cut
 
-our $VERSION = '0.7';
+our $VERSION = '0.8';
 
 =head1 SYNOPSIS
 
