@@ -194,7 +194,7 @@ sub spawn {
 
 =head1 AUTHOR
 
-Brad Lhotsky, C<< <lhotskyb at mail.nih.gov> >>
+Brad Lhotsky, C<< <brad.lhotsky at gmail.com> >>
 
 =head1 BUGS
 
