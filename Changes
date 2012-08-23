@@ -1,4 +1,8 @@
 Revision history for POE-Component-Client-eris
+0.9     2012-08-23 Brad Lhotsky <brad@divisionbyzero.net>
+        - Removed taint checking in tests
+        - Updated author email
+
 0.8     2012-07-06 Brad Lhotsky <brad@divisionbyzero.net>
         - Fixed bug in match handling
 
