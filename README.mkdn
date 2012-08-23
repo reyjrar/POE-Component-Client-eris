@@ -4,7 +4,7 @@ POE::Component::Client::eris - POE Component for reading eris events
 
 # VERSION
 
-version 0.8
+version 0.9
 
 # SYNOPSIS
 
@@ -29,7 +29,7 @@ POE::Component::Client::eris - POE eris Session!
 
 # VERSION
 
-Version 0.8
+Version 0.9
 
 # EXPORT
 
@@ -51,7 +51,7 @@ Parameters:
 
 # AUTHOR
 
-Brad Lhotsky, `<lhotskyb at mail.nih.gov>`
+Brad Lhotsky, `<brad.lhotsky at gmail.com>`
 
 # BUGS
 
