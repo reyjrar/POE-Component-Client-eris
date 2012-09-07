@@ -4,7 +4,7 @@ POE::Component::Client::eris - POE Component for reading eris events
 
 # VERSION
 
-version 0.9
+version 1.0
 
 # SYNOPSIS
 
@@ -22,14 +22,6 @@ POE session for integration with the eris event correlation engine.
 	);
     ...
 	POE::Kernel->run();
-
-# NAME
-
-POE::Component::Client::eris - POE eris Session!
-
-# VERSION
-
-Version 0.9
 
 # EXPORT
 

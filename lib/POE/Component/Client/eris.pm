@@ -11,17 +11,7 @@ use POE qw(
 	Component::Client::TCP
 );
 
-=head1 NAME
-
-POE::Component::Client::eris - POE eris Session!
-
-=head1 VERSION
-
-Version 0.9
-
-=cut
-
-our $VERSION = '0.9';
+our $VERSION = '1.0';
 
 =head1 SYNOPSIS
 
@@ -169,7 +159,15 @@ sub spawn {
 			},
 			handle_message	=> sub {
 				my ($kernel,$heap,$instr) = @_[KERNEL,HEAP,ARG0];
-				my $msg = parse_syslog_line($instr);
+
+                my $msg = undef;
+                eval {
+                    no warnings;
+				    $msg = parse_syslog_line($instr);
+                };
+                if($@ || !defined $msg) {
+                    return;
+                }
 
 				if( ref $args{MessageHandler} ne 'CODE' ) {
 					croak "You need to specify a subroutine reference to the 'MessageHandler' parameter.\n";
