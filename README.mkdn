@@ -4,7 +4,7 @@ POE::Component::Client::eris - POE Component for reading eris events
 
 # VERSION
 
-version 1.0
+version 1.1
 
 # SYNOPSIS
 
@@ -22,6 +22,8 @@ POE session for integration with the eris event correlation engine.
 	);
     ...
 	POE::Kernel->run();
+
+For use with a server running the POE::Component::Server::eris output.
 
 # EXPORT
 
@@ -76,6 +78,10 @@ You can also look for information at:
 - Search CPAN
 
 [http://search.cpan.org/dist/POE-Component-Client-eris](http://search.cpan.org/dist/POE-Component-Client-eris)
+
+- See also
+
+[http://search.cpan.org/dist/POE-Component-Server-eris](http://search.cpan.org/dist/POE-Component-Server-eris)
 
 # ACKNOWLEDGEMENTS
 
