@@ -150,7 +150,7 @@ sub spawn {
 				# Send the Subscription
                 foreach my $target (sort { $a cmp $b } keys %data) {
                     my $subname = "do_" . lc $target;
-				    $kernel->yield(  $subname => $data{$target} );
+				    $kernel->yield( $subname => $data{$target} );
                 }
 			},
 			do_subscribe	=> sub {
