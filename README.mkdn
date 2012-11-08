@@ -13,15 +13,15 @@ POE session for integration with the eris event correlation engine.
     use POE::Component::Client::eris;
 
     my $eris_sess_id = POE::Component::Client::eris->spawn(
-			RemoteAddress		=> 'localhost', 	#default
-			RemotePort			=> '9514',		 	#default
-			Alias				=> 'eris_client',	#default
-			Subscribe			=> [qw(snort dhcpd)],				# REQUIRED (and/or Match)
-			Match				=> [qw(devbox1 myusername error)],	# REQUIRED (and/or Subscribe)
-			MessageHandler		=> sub { ... },		 # REQUIRED
-	);
+            RemoteAddress       => 'localhost',     #default
+            RemotePort          => '9514',          #default
+            Alias               => 'eris_client',   #default
+            Subscribe           => [qw(snort dhcpd)],               # REQUIRED (and/or Match)
+            Match               => [qw(devbox1 myusername error)],  # REQUIRED (and/or Subscribe)
+            MessageHandler      => sub { ... },      # REQUIRED
+    );
     ...
-	POE::Kernel->run();
+    POE::Kernel->run();
 
 For use with a server running the POE::Component::Server::eris output.
 
@@ -36,12 +36,12 @@ POE::Component::Client::eris does not export any symbols.
 Creates the POE::Session for the eris correlator.
 
 Parameters:
-	RemoteAddress		=> 'localhost', 	\#default
-	RemotePort			=> '9514',		 	\#default
-	Alias				=> 'eris\_client',	\#default
-	Subscribe			=> \[qw(snort dhcpd)\],				\# REQUIRED (and/or Match)
-	Match				=> \[qw(devbox1 myusername error)\],	\# REQUIRED (and/or Subscribe)
-	MessageHandler		=> sub { ... },		 \# REQUIRED
+    RemoteAddress       => 'localhost',     \#default
+    RemotePort          => '9514',          \#default
+    Alias               => 'eris\_client',   \#default
+    Subscribe           => \[qw(snort dhcpd)\],               \# REQUIRED (and/or Match)
+    Match               => \[qw(devbox1 myusername error)\],  \# REQUIRED (and/or Subscribe)
+    MessageHandler      => sub { ... },      \# REQUIRED
     ReturnType          => 'hash',           \# default, or 'string'
 
 # AUTHOR
