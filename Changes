@@ -1,4 +1,7 @@
 Revision history for POE-Component-Client-eris
+1.2     2012-11-08 Brad Lhotsky <brad@divisionbyzero.net>
+        - Added 'ReturnType' option to skip Parse::Syslog::Line
+
 1.1     2012-10-15 Brad Lhotsky <brad@divisionbyzero.net>
         - Fixed Subscribe/Match logic
 

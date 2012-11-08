@@ -11,7 +11,7 @@ use POE qw(
 	Component::Client::TCP
 );
 
-our $VERSION = '1.1';
+our $VERSION = '1.2';
 
 =head1 SYNOPSIS
 
@@ -49,6 +49,7 @@ Parameters:
 	Subscribe			=> [qw(snort dhcpd)],				# REQUIRED (and/or Match)
 	Match				=> [qw(devbox1 myusername error)],	# REQUIRED (and/or Subscribe)
 	MessageHandler		=> sub { ... },		 # REQUIRED
+    ReturnType          => 'hash',           # default, or 'string'
 
 =cut
 
@@ -61,6 +62,7 @@ sub spawn {
 		RemoteAddress	=> 'localhost',
 		RemotePort		=> 9514,
 		Alias			=> 'eris_client',
+        ReturnType      => 'hash',
 		Subscribe		=> undef,
 		Match			=> undef,
 		MessageHandler	=> undef,
@@ -172,12 +174,17 @@ sub spawn {
 				my ($kernel,$heap,$instr) = @_[KERNEL,HEAP,ARG0];
 
                 my $msg = undef;
-                eval {
-                    no warnings;
-				    $msg = parse_syslog_line($instr);
-                };
-                if($@ || !defined $msg) {
-                    return;
+                if( $args{ReturnType} eq 'string' ) {
+                    $msg = $instr;
+                }
+                else {
+                    eval {
+                        no warnings;
+                        $msg = parse_syslog_line($instr);
+                    };
+                    if($@ || !defined $msg) {
+                        return;
+                    }
                 }
 
 				if( ref $args{MessageHandler} ne 'CODE' ) {

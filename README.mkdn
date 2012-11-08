@@ -4,7 +4,7 @@ POE::Component::Client::eris - POE Component for reading eris events
 
 # VERSION
 
-version 1.1
+version 1.2
 
 # SYNOPSIS
 
@@ -42,6 +42,7 @@ Parameters:
 	Subscribe			=> \[qw(snort dhcpd)\],				\# REQUIRED (and/or Match)
 	Match				=> \[qw(devbox1 myusername error)\],	\# REQUIRED (and/or Subscribe)
 	MessageHandler		=> sub { ... },		 \# REQUIRED
+    ReturnType          => 'hash',           \# default, or 'string'
 
 # AUTHOR
 
