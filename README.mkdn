@@ -4,7 +4,7 @@ POE::Component::Client::eris - POE Component for reading eris events
 
 # VERSION
 
-version 1.2
+version 1.4
 
 # SYNOPSIS
 
@@ -44,10 +44,6 @@ Parameters:
     MessageHandler      => sub { ... },      \# REQUIRED
     ReturnType          => 'hash',           \# default, or 'string'
 
-# AUTHOR
-
-Brad Lhotsky, `<brad.lhotsky at gmail.com>`
-
 # BUGS
 
 Please report any bugs or feature requests to
@@ -66,23 +62,23 @@ You can also look for information at:
 
 - AnnoCPAN: Annotated CPAN documentation
 
-[http://annocpan.org/dist/POE-Component-Client-eris](http://annocpan.org/dist/POE-Component-Client-eris)
+    [http://annocpan.org/dist/POE-Component-Client-eris](http://annocpan.org/dist/POE-Component-Client-eris)
 
 - CPAN Ratings
 
-[http://cpanratings.perl.org/d/POE-Component-Client-eris](http://cpanratings.perl.org/d/POE-Component-Client-eris)
+    [http://cpanratings.perl.org/d/POE-Component-Client-eris](http://cpanratings.perl.org/d/POE-Component-Client-eris)
 
 - RT: CPAN's request tracker
 
-[http://rt.cpan.org/NoAuth/Bugs.html?Dist=POE-Component-Client-eris](http://rt.cpan.org/NoAuth/Bugs.html?Dist=POE-Component-Client-eris)
+    [http://rt.cpan.org/NoAuth/Bugs.html?Dist=POE-Component-Client-eris](http://rt.cpan.org/NoAuth/Bugs.html?Dist=POE-Component-Client-eris)
 
 - Search CPAN
 
-[http://search.cpan.org/dist/POE-Component-Client-eris](http://search.cpan.org/dist/POE-Component-Client-eris)
+    [http://search.cpan.org/dist/POE-Component-Client-eris](http://search.cpan.org/dist/POE-Component-Client-eris)
 
 - See also
 
-[http://search.cpan.org/dist/POE-Component-Server-eris](http://search.cpan.org/dist/POE-Component-Server-eris)
+    [http://search.cpan.org/dist/POE-Component-Server-eris](http://search.cpan.org/dist/POE-Component-Server-eris)
 
 # ACKNOWLEDGEMENTS
 

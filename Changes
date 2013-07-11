@@ -1,4 +1,7 @@
 Revision history for POE-Component-Client-eris
+1.4     2013-07-11 Brad Lhotsky <brad@divisionbyzero.net>
+        - Patch from Mattia Barbon to use streams
+
 1.2     2012-11-08 Brad Lhotsky <brad@divisionbyzero.net>
         - Added 'ReturnType' option to skip Parse::Syslog::Line
 
