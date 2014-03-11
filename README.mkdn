@@ -82,13 +82,6 @@ You can also look for information at:
 
 # ACKNOWLEDGEMENTS
 
-# COPYRIGHT & LICENSE
-
-Copyright 2007 Brad Lhotsky, all rights reserved.
-
-This program is free software; you can redistribute it and/or modify it
-under the same terms as Perl itself.
-
 # AUTHOR
 
 Brad Lhotsky <brad@divisionbyzero.net>

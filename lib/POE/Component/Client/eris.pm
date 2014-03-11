@@ -267,13 +267,6 @@ L<http://search.cpan.org/dist/POE-Component-Server-eris>
 
 =head1 ACKNOWLEDGEMENTS
 
-=head1 COPYRIGHT & LICENSE
-
-Copyright 2007 Brad Lhotsky, all rights reserved.
-
-This program is free software; you can redistribute it and/or modify it
-under the same terms as Perl itself.
-
 =cut
 
 1; # End of POE::Component::Client::eris
